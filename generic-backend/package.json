@@ -1,0 +1,31 @@
+{
+  "name": "generic-backend",
+  "version": "1.0.0",
+  "description": "backend generico",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "jest --passWithNoTests"
+  },
+  "prisma": {
+    "seed": "node prisma/seed.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/client": "^5.20.0",
+    "cors": "^2.8.5",
+    "csvtojson": "^2.0.10",
+    "date-fns": "^4.1.0",
+    "express": "^4.19.2",
+    "express-async-errors": "^3.1.1",
+    "nodemon": "^3.1.0",
+    "winston": "^3.13.0"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^8.4.1",
+    "jest": "^29.7.0",
+    "jest-mock-extended": "^4.0.0-beta1",
+    "prisma": "^5.20.0"
+  }
+}
